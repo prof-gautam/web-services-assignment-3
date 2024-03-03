@@ -15,13 +15,17 @@ Before starting the server, ensure that a `.env` file is created at the root of 
 PORT=YourDesiredPortNumber
 DATA_PATH=PathToYourDataFile.json
 ```
+
 **Required dependencies:** express, dotenv, https, and json5 for the application, as well as nodemon for development purposes
 
 ### For application
+
 ```
 npm install express dotenv https json5
 ```
+
 ### For development
+
 ```
 npm install --save-dev nodemon
 ```
@@ -37,6 +41,7 @@ http://localhost:{PORT}/sfbu/api/v1
 Replace `{PORT}` with the actual port number specified in your `.env` file.
 
 ## Run Devlopment server
+
 ```
 npm run dev
 ```
@@ -132,31 +137,7 @@ Finds students who have taken the same courses as the specified student, excludi
   "clientInfo": {...} // Client information object
 }
 ```
+
 ## Project Structure
 
-assignment3/
-│
-├── data/
-│   └── 2024-spring-student-info.json  # Data file for the application
-│
-├── node_modules/  # Directory containing npm packages
-│
-├── routes/
-│   ├── apiRoutes.js
-│   └── studentRoutes.js
-│
-├── ssl/
-│   ├── cert.pem
-│   └── key.pem
-│
-├── utils/
-│   ├── clientInfo.js
-│   └── readJson.js
-│
-├── .env  # Environment configuration file
-├── .example.env  # Example environment configuration
-├── .gitignore  # Specifies intentionally untracked files to ignore
-├── index.js  # Entry point of the application
-├── package.json  # Project manifest with dependencies and scripts
-├── package-lock.json
-└── readme.md  # Documentation for the project
+![structure](readme_images/structure.png)
